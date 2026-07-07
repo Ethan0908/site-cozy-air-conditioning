@@ -1,0 +1,25 @@
+{
+  "label": "Premium Local Service",
+  "bestFor": [
+    "plumbing",
+    "hvac",
+    "electrician",
+    "roofing",
+    "cleaning",
+    "repair",
+    "contractor",
+    "home service"
+  ],
+  "layoutPattern": "split-panel",
+  "visualLanguage": "warm editorial, high trust, soft contrast, refined cards",
+  "tokens": {
+    "bg": "#f5f1eb",
+    "ink": "#15110d",
+    "muted": "#6f655b",
+    "surface": "rgba(255, 255, 255, 0.74)",
+    "surfaceStrong": "#ffffff",
+    "accent": "#9b5f2b",
+    "accentDark": "#5b3318"
+  },
+  "id": "premium-local-service"
+}
