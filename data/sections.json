@@ -1,0 +1,44 @@
+{
+  "heroVariant": "split-panel",
+  "proofVariant": "trust-strip",
+  "servicesVariant": "cards",
+  "processVariant": "three-step",
+  "proofOrExpectation": "expectations",
+  "finalCtaVariant": "quote",
+  "imageStrategy": {
+    "mode": "graphic-editorial",
+    "heroPhoto": null,
+    "galleryCount": 0,
+    "rules": [
+      "No real business photos were supplied. Do not fabricate or hotlink stock photos.",
+      "Use layout, typography, cards, gradients, and service-specific microcopy to create quality.",
+      "If the scraper can collect public photos from the business's own website or profile, add them to business.photos before generation."
+    ]
+  },
+  "sectionOrder": [
+    "hero",
+    "proof",
+    "services",
+    "decision",
+    "process",
+    "proofOrExpectation",
+    "faq",
+    "finalCta"
+  ],
+  "intent": {
+    "emergency": false,
+    "appointment": false,
+    "professional": false,
+    "imageLed": false,
+    "hasPhotos": false,
+    "hasReviews": false,
+    "hasPhone": true
+  },
+  "registryNotes": {
+    "hero": "Large editorial headline with right-side service summary panel.",
+    "proof": "Short proof points across a horizontal strip.",
+    "services": "Four to six cards with short descriptions.",
+    "process": "Simple contact-to-completion timeline.",
+    "finalCta": "Quote request CTA."
+  }
+}
