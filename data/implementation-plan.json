@@ -1,0 +1,290 @@
+{
+  "designRead": {
+    "business": "Cozy Air Conditioning",
+    "market": "Manhattan",
+    "businessType": "General Contractor / HVAC lead",
+    "availableFacts": [
+      "Phone: (212) 971-1383",
+      "Website: https://cozyairconditioning.com/",
+      "Service area: Manhattan",
+      "Lead notes mention HVAC",
+      "Lead notes mention 4.8 rating and 22 Google reviews",
+      "Lead notes include 276 5th Ave #704, New York, NY 10001, USA"
+    ],
+    "missingData": [
+      "No supplied logo",
+      "No supplied photos",
+      "No structured service list",
+      "No testimonials",
+      "No email",
+      "No offer, warranty, emergency, certification, or licensing claims"
+    ],
+    "artDirection": "Neighbourhood field guide with a technical proof dossier layer: warm editorial paper, Manhattan contact context, precise HVAC-inspired linework, and phone-first conversion.",
+    "factualGuardrails": [
+      "Do not invent emergency availability, same-day service, warranties, licensing, awards, years in business, service guarantees, or testimonials.",
+      "Treat service items as inquiry-routing categories unless later data verifies exact offerings.",
+      "Do not use unrelated stock photography or hotlinked assets."
+    ]
+  },
+  "dials": {
+    "DESIGN_VARIANCE": 8,
+    "MOTION_INTENSITY": 3,
+    "VISUAL_DENSITY": 5
+  },
+  "colourScheme": {
+    "bg": "#f5f1eb",
+    "ink": "#15110d",
+    "muted": "#6f655b",
+    "surface": "rgba(255, 255, 255, 0.74)",
+    "surfaceStrong": "#ffffff",
+    "accent": "#9b5f2b",
+    "accentDark": "#5b3318",
+    "coolBlue": "#2f6f8f",
+    "coolWash": "#dcecf1",
+    "rule": "rgba(21, 17, 13, 0.14)",
+    "contrastPanel": "#17130f"
+  },
+  "typography": {
+    "display": "Fraunces",
+    "body": "Instrument Sans",
+    "heroTarget": "H1 should land in 2 to 3 desktop lines with a wide editorial measure and clamp-based sizing.",
+    "hierarchy": [
+      "Location/service line",
+      "Large display H1",
+      "Short deck",
+      "CTA row",
+      "Compact factual proof/contact notes"
+    ],
+    "avoid": [
+      "Browser default fonts",
+      "Arial or Helvetica as the identity",
+      "Raw system-ui as the main stack",
+      "Narrow six-line hero headings"
+    ]
+  },
+  "customFonts": {
+    "source": "next/font/google",
+    "displayImport": "Fraunces",
+    "bodyImport": "Instrument_Sans",
+    "implementation": "Define CSS variables in app/layout.tsx, then consume them in globals.css.",
+    "fallback": "Use serif/sans-serif fallbacks only after the custom font variables."
+  },
+  "assetPlan": {
+    "photosSupplied": false,
+    "logoSupplied": false,
+    "stockAllowed": false,
+    "strategy": [
+      "Use a text wordmark and CSS monogram/temperature dial.",
+      "Build a hero dossier panel with CSS linework, airflow curves, building-grid blocks, and contact tiles.",
+      "Use a later full-bleed CSS technical panel instead of fake photography.",
+      "If real business photos are later added to business.photos, use them as documentary accents and remove weaker CSS placeholders."
+    ]
+  },
+  "sections": [
+    {
+      "id": "top",
+      "name": "Premium navigation",
+      "purpose": "Anchor navigation, brand identity, and persistent phone CTA."
+    },
+    {
+      "id": "hero",
+      "name": "Hero dossier",
+      "purpose": "Art-directed first viewport with Manhattan HVAC positioning, phone CTA, website link, and factual data panel."
+    },
+    {
+      "id": "proof",
+      "name": "Credibility strip",
+      "purpose": "Compact factual strip: Manhattan, HVAC, phone, website, rating/review note."
+    },
+    {
+      "id": "thesis",
+      "name": "Brand thesis",
+      "purpose": "Editorial two-column explanation of call-first HVAC contact readiness."
+    },
+    {
+      "id": "services",
+      "name": "Service architecture",
+      "purpose": "Interactive inquiry-routing categories for cooling, heating, airflow, and project coordination without pretending to be an exhaustive verified menu."
+    },
+    {
+      "id": "fit",
+      "name": "Manhattan fit panel",
+      "purpose": "Asymmetric bento for building contexts, service area, address note, and contact path."
+    },
+    {
+      "id": "decision",
+      "name": "Decision guide",
+      "purpose": "Practical checklist for what to prepare before and during the call."
+    },
+    {
+      "id": "process",
+      "name": "Process timeline",
+      "purpose": "Human process story from call to next step without promising timing or diagnosis."
+    },
+    {
+      "id": "expectations",
+      "name": "Expectation grid",
+      "purpose": "Proof and claim-boundary section using only supplied facts."
+    },
+    {
+      "id": "questions",
+      "name": "Principles accordion",
+      "purpose": "Useful interaction covering factual claims, contact route, Manhattan context, and no-stock asset policy."
+    },
+    {
+      "id": "contact",
+      "name": "Final contact CTA",
+      "purpose": "High-contrast conversion panel with phone and website."
+    },
+    {
+      "id": "footer",
+      "name": "Footer",
+      "purpose": "Brand close, links, phone, website, service area, and factual-data note."
+    }
+  ],
+  "components": [
+    "SiteHeader",
+    "HeroDossier",
+    "DossierVisual",
+    "CredibilityStrip",
+    "BrandThesis",
+    "ServiceArchitecture",
+    "ManhattanFitPanel",
+    "DecisionGuide",
+    "ProcessTimeline",
+    "ExpectationGrid",
+    "PrinciplesAccordion",
+    "ContactConversion",
+    "SiteFooter",
+    "MobileStickyCTA"
+  ],
+  "interactions": [
+    {
+      "name": "Anchor navigation",
+      "implementation": "Use real section IDs and smooth scroll, disabled under prefers-reduced-motion."
+    },
+    {
+      "name": "Service selector",
+      "implementation": "Use accessible tabs if page becomes a client component, or native details panels for simpler buildability."
+    },
+    {
+      "name": "Principles accordion",
+      "implementation": "Use native details/summary or labelled buttons with aria-controls."
+    },
+    {
+      "name": "Mobile sticky CTA",
+      "implementation": "Fixed bottom bar below 760px with tel link and website link; add bottom padding to the page shell."
+    },
+    {
+      "name": "Hover and focus polish",
+      "implementation": "Copper CTA states, cool-blue rule reveals, focus-visible rings, and reduced-motion-safe transitions."
+    }
+  ],
+  "ctaMap": {
+    "headerPrimary": {
+      "label": "Call now",
+      "href": "tel:+12129711383"
+    },
+    "heroPrimary": {
+      "label": "Call (212) 971-1383",
+      "href": "tel:+12129711383"
+    },
+    "heroSecondary": {
+      "label": "Visit website",
+      "href": "https://cozyairconditioning.com/"
+    },
+    "servicePanels": {
+      "label": "Call to discuss fit",
+      "href": "tel:+12129711383"
+    },
+    "decisionGuide": {
+      "label": "Start with a call",
+      "href": "tel:+12129711383"
+    },
+    "finalPrimary": {
+      "label": "Call (212) 971-1383",
+      "href": "tel:+12129711383"
+    },
+    "finalSecondary": {
+      "label": "Open cozyairconditioning.com",
+      "href": "https://cozyairconditioning.com/"
+    },
+    "mobileSticky": {
+      "primaryLabel": "Call",
+      "primaryHref": "tel:+12129711383",
+      "secondaryLabel": "Website",
+      "secondaryHref": "https://cozyairconditioning.com/"
+    },
+    "omitted": "No email CTA because no email exists in the business data."
+  },
+  "mobilePlan": {
+    "breakpoints": [
+      "Desktop >= 1024px: 12-column editorial grid and sticky header.",
+      "Tablet 760px-1023px: stacked hero with dossier panel preserved above the fold.",
+      "Mobile < 760px: compact header, one-column sections, horizontal anchor row if needed, sticky CTA."
+    ],
+    "layoutRules": [
+      "Use overflow-x hidden on the page shell.",
+      "Use clamp for hero type and section spacing.",
+      "Convert bento and service architecture to one-column panels.",
+      "Reserve bottom padding so the sticky CTA never covers footer/contact content.",
+      "Wrap or relabel long website URLs to avoid overflow."
+    ]
+  },
+  "stagePlan": [
+    {
+      "stage": "Foundation",
+      "tasks": [
+        "Add next/font/google setup in layout.",
+        "Create data helpers for phone, website, parsed address note, and rating/review note.",
+        "Define CSS variables, resets, focus states, and reduced-motion rules."
+      ]
+    },
+    {
+      "stage": "Full-site composition",
+      "tasks": [
+        "Rewrite page structure from blank canvas.",
+        "Build all planned sections in the chosen field-guide/dossier concept.",
+        "Avoid generic card-stack dominance and unsupported claims."
+      ]
+    },
+    {
+      "stage": "Interaction pass",
+      "tasks": [
+        "Implement service selector/details, principles accordion, anchor navigation, and mobile sticky CTA.",
+        "Add hover/focus polish without adding unnecessary dependencies."
+      ]
+    },
+    {
+      "stage": "Responsive polish",
+      "tasks": [
+        "Tune desktop, tablet, and mobile grids.",
+        "Check H1 line breaks, URL wrapping, CTA contrast, and sticky CTA spacing."
+      ]
+    },
+    {
+      "stage": "Build and QA",
+      "tasks": [
+        "Run npm install if dependencies are unavailable.",
+        "Run npm run build.",
+        "Review screenshots at desktop and mobile sizes if browser tooling is available.",
+        "Rewrite weak scaffold-like sections before finalizing."
+      ]
+    }
+  ],
+  "qaChecklist": [
+    "At least 10 meaningful sections plus footer exist.",
+    "Custom fonts load through next/font/google.",
+    "Hero is art-directed and not a centered generic SaaS block.",
+    "No unrelated stock images or hotlinked photos are used.",
+    "No fake emergency, warranty, license, award, years-in-business, or guarantee claims appear.",
+    "Rating/review count is shown only as lead-provided factual data, not as testimonials.",
+    "Services are framed as HVAC inquiry categories unless exact offerings are later supplied.",
+    "Every CTA points to a real phone or website path.",
+    "Mobile sticky CTA does not overlap contact/footer content.",
+    "No horizontal overflow on mobile.",
+    "Buttons and links have visible focus states and sufficient contrast.",
+    "Reduced motion preferences are respected.",
+    "The page could not be rebranded for another business by only changing the name."
+  ]
+}
